@@ -1,9 +1,11 @@
 {
     "manifest_version": 2,
 
-    "name": "google homepage in trend",
+    "name": "google trend on the homepage",
     "version": "1",
-    "description": "구글 홈페이지에 구글 트렌드를 띄워줘서 급상승하는 단어 정보 제공.",
+    "description": "구글 메인 화면에 급상승 단어 정보 제공.",
+    "default_locale": "kr",
+    "icons": "icon.png",
     
     "browser_action": {
         "default_icon": "icon.png",
