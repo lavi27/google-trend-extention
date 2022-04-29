@@ -1,6 +1,115 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+@font-face {
+font-family: 'Product Sans Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Regular'), url('./fonts/ProductSans-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Italic'), url('./fonts/ProductSans-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Thin Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Thin Regular'), url('./fonts/ProductSans-Thin.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Light Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Light Regular'), url('./fonts/ProductSans-Light.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Medium Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Medium Regular'), url('./fonts/ProductSans-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Black Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Black Regular'), url('./fonts/ProductSans-Black.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Thin Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Thin Italic'), url('./fonts/ProductSans-ThinItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Light Italic'), url('./fonts/ProductSans-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Medium Italic'), url('./fonts/ProductSans-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Bold'), url('./fonts/ProductSans-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Bold Italic'), url('./fonts/ProductSans-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Product Sans Black Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Product Sans Black Italic'), url('./fonts/ProductSans-BlackItalic.woff') format('woff');
+}
+
+/* * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; } */
+
 body {
-    width: 400px;
+    width: 350px;
     margin: 0px;
+}
+
+.content {
+    padding: 30px;
+}
+
+.controlBox {
+    position: fixed;
+    width: 100%;
+    background: #fff;
 }
 
 li {
@@ -17,24 +126,74 @@ form {
     margin: 0px;
 }
 
+.lodingUI {
+    border: 3px dashed #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+
+    animation: lodingUI 0.8s infinite;
+}
+
+@keyframes lodingUI {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+hr {
+    border: none;
+    margin: 25px 0px;
+    width: 100%;
+    height: 1px;
+    background: #0008;
+}
+
 ol {
-    margin: 0px;
+    margin: 80px 0px 0px 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 li {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-form {
-    display: flex;
-    justify-content: space-between;
+li p {
+    margin: 0;
 }
 
-.content {
-    background-color: #ffffff;
-    border-radius: 20px;
-	box-shadow: 0px 0px 20px -2px #00000062;
-    padding: 20px;
+li .ranking {
+    font-size: 22px;
+    width: 40px;
+    color: 	#4285F4;
+    font-family: 'Product Sans Black Regular', 'sans-serif';
+}
+
+li .title {
+    margin-right: auto;
+    font-size: 15px;
+    font-family: 'Product Sans Black Medium', 'sans-serif';
+}
+
+li .traffic {
+    font-size: 15px;
+    font-family: 'Product Sans Black Medium', 'sans-serif';
+}
+
+cite {
+    font-family: 'Product Sans Light Regular', 'sans-serif';
+    font-style: normal;
+    font-size: 12px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0px auto;
 }

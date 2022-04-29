@@ -5,28 +5,23 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h1>인기 급상승 검색어</h1>
         <div class="content">
-            <form action = "#" accept-charset="utf-8" name = "datalist" method = "get">
-                <button><</button>
+            <div class="controlBox">
+                <button class="previousDate"><</button>
                 <span>
-                    <input type = "date" min = "2010-01-01" max = "2014-03-01" name = "date" step = "7">
-                    <input type = "reset" value = "reset"/>
+                    <input class="dateInput" type="date">
+                    <input type="button" value="reset"/>
                 </span>
-                <button>></button>
-            </form>
-
-            <hr>
-            <ol>
-                <li>1 qwerqwer<span>+10만</span></li>
-                <li>2 qwerqwer<span>+10만</span></li>
-                <li>3 qwerqwer<span>+10만</span></li>
-                <li>4 qwerqwer<span>+10만</span></li>
-                <li>5 qwerqwer<span>+10만</span></li>
-                <li>6 qwerqwer<span>+10만</span></li>
-                <li>7 qwerqwer<span>+10만</span></li>
-                <li>8 qwerqwer<span>+10만</span></li>
+                <button class="nextDate">></button>
+                <hr>
+            </div>
+            <ol class="wordList">
             </ol>
+            <div class="lodingUI" style="display: none;"></div>
+
+            <cite>ⓒ 2022. lavi All rights reserved</cite>
         </div>
+        
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -1,11 +1,10 @@
 {
     "manifest_version": 2,
 
-    "name": "google trend on the homepage",
+    "name": "google trend",
     "version": "1",
-    "description": "구글 메인 화면에 급상승 단어 정보 제공.",
-    "default_locale": "kr",
-    "icons": "icon.png",
+    "description": "구글 급상승 단어 정보 제공.",
+    "default_locale": "en",
     
     "browser_action": {
         "default_icon": "icon.png",
@@ -13,15 +12,10 @@
     },
     
     "permissions": [
-        "chrome://newtab",
         "activeTab",
         "tabs",
         "storage"
     ],
 
-    "content_security_policy":  "script-src 'self' 'unsafe-eval'; script-src-elem 'self' 'unsafe-eval' https://ssug.api.search.zum.com https://contentsgt.cafe24.com; object-src 'self'; img-src chrome://favicon/ https://*.zumst.com/;",
-
-    "chrome_url_overrides": {
-        "newtab": "html.html"
-    }
+    "content_security_policy":  "script-src 'self' 'unsafe-eval'; script-src-elem 'self' 'unsafe-eval' https://ssug.api.search.zum.com https://contentsgt.cafe24.com; object-src 'self'; img-src chrome://favicon/ https://*.zumst.com/;"
 }
