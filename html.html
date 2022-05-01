@@ -5,16 +5,18 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div class="controlBox">
+            <button class="previousDate"><</button>
+            <span>
+                <input class="dateInput" type="date" required="required">
+                <input type="button" value="today"/>
+            </span>
+            <button class="nextDate">></button>
+        </div>
+
+        <hr>
+        
         <div class="content">
-            <div class="controlBox">
-                <button class="previousDate"><</button>
-                <span>
-                    <input class="dateInput" type="date">
-                    <input type="button" value="reset"/>
-                </span>
-                <button class="nextDate">></button>
-                <hr>
-            </div>
             <ol class="wordList">
             </ol>
             <div class="lodingUI" style="display: none;"></div>

@@ -100,16 +100,60 @@ src: local('Product Sans Black Italic'), url('./fonts/ProductSans-BlackItalic.wo
 body {
     width: 350px;
     margin: 0px;
+    position: relative;
 }
 
 .content {
-    padding: 30px;
+    height: 500px;
+    padding: 0px 30px 40px 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .controlBox {
-    position: fixed;
+    padding: 30px 30px 0px 30px;
+    box-sizing: border-box;
     width: 100%;
+    height: 60px;
     background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controlBox input,
+.controlBox button {
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: none;
+}
+
+.controlBox input:hover,
+.controlBox button:hover {
+    background: #f9f9f9;
+}
+
+.previousDate {
+    width: 30px;
+}
+
+.nextDate {
+    width: 30px;
+}
+
+.dateInput {
+    font-family: 'Product Sans Black Medium', 'sans-serif';
+    margin-right: 4px;
+}
+
+.dateInput::-webkit-datetime-edit-day-field:focus,
+.dateInput::-webkit-datetime-edit-month-field:focus,
+.dateInput::-webkit-datetime-edit-year-field:focus {
+    background: none;
+    color: #000;
+    outline: none;
 }
 
 li {
@@ -130,6 +174,7 @@ form {
     border: 3px dashed #000;
     width: 30px;
     height: 30px;
+    margin: 30px 0px;
     border-radius: 100px;
 
     animation: lodingUI 0.8s infinite;
@@ -147,18 +192,18 @@ form {
 
 hr {
     border: none;
-    margin: 25px 0px;
-    width: 100%;
+    margin: 25px 30px;
     height: 1px;
-    background: #0008;
+    background: #0002;
 }
 
 ol {
-    margin: 80px 0px 0px 0px;
+    margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 li {
@@ -179,6 +224,10 @@ li .ranking {
 }
 
 li .title {
+    overflow-x: hidden;
+    text-overflow:ellipsis;
+    width: 170px;
+    white-space: nowrap;
     margin-right: auto;
     font-size: 15px;
     font-family: 'Product Sans Black Medium', 'sans-serif';
