@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dateInput = document.getElementsByClassName("dateInput")[0];
     const lodingUI = document.getElementsByClassName("lodingUI")[0];
 
-    let date = [new Date().getFullYear(), (new Date().getMonth()+1).toString().padStart(2, "0"), new Date().getDate()-1];
+    let date = [new Date().getFullYear(), (new Date().getMonth()+1).toString().padStart(2, "0"), new Date().getDate().toString().padStart(2, "0")];
     dateInput.value = `${date[0]}-${date[1]}-${date[2]}`;
     dateInput.min = `${date[0]}-${date[1]}-01`;
     dateInput.max = `${date[0]}-${date[1]}-${date[2]}`;
