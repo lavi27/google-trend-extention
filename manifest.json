@@ -6,6 +6,12 @@
     "description": "구글 급상승 단어 정보 제공.",
     "default_locale": "en",
     
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
     "browser_action": {
         "default_icon": "icon.png",
         "default_popup": "html.html"
