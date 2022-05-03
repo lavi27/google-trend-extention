@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             nextDate.className = "nextDate block";
         }
-
-        fetch(`http://127.0.0.1:3050/api/main/${yr}/${mh}/${dy}`)
+        
+        fetch(`http://180.67.212.78:3050/api/main/${yr}/${mh}/${dy}`)
             .then((response) => response.json())
             .then((data) => {
                 lodingUI.style.display = "none";
