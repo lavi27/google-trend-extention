@@ -99,12 +99,13 @@ src: local('Product Sans Black Italic'), url('./fonts/ProductSans-BlackItalic.wo
 
 body {
     width: 350px;
+    height: 600px;
     margin: 0px;
     position: relative;
 }
 
 .content {
-    height: 500px;
+    height: 440px;
     padding: 0px 30px 40px 30px;
     overflow-y: auto;
     display: flex;
